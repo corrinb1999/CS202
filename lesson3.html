@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    <title>Lesson 3 | Forms</title>
+  </head>
+  <body>
+    <!-- wrapping: container(fixed even when site is changing size) or  container-fluid (changes as website is shrunk/grown)-->
+    <div class="container-fluid">
+        <h1>Forms</h1>
+        <!-- get is used for search fields, post is for confidential stuff like passwords/usernames -->
+        <form action="lesson2.html" method="post" autocomplete="" onsubmit="">
+
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="n1" required><br>
+
+            <label for="passowrd">Password</label><br>
+            <input type="password" name="password" id="pass" placeholder="Enter Password"><br>
+
+            <label for="phone">Phone#</label><br>
+            <input type="text" name="phone" id="p"><br>
+
+            <label for="date">Date</label><br>
+            <input type="date" name="date" id="dat"><br>
+
+            <label for="gender">Gender</label><br>
+            Male: <input type="radio" name="gender" id=""><br>
+            Female <input type="radio" name="gender" id=""><br>
+
+            <label for="image">Upload image</label><br>
+            <input type="file" name="image" id=""><br>
+
+            <label for="city">Select your city</label><br>
+            <section>
+                <option value="">Bellingham</option>
+                <option value="">Seattle</option>
+                <option value="">Tacoma</option>
+            </section><br>
+
+            <label for="message">Message</label><br>
+            <textarea name="message" id="" cols="30" rows="10"></textarea><br>
+            
+            <!-- bootstrap has class names, so class btn is button, and btn-primary makes it blue -->
+            <input class="btn btn-primary" type="submit" value="Submit">
+          
+        </form>
+    </div>
+
+
+    <hr>
+    <h3>Audio</h3>
+    <audio controls autoplay loop muted>
+        <source src="audio/audio.mp3" type="audio/mp3">
+    </audio>
+    
+
+    <hr>
+
+    <h3>Video</h3>
+    <video autoplay loop plays-inline>
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+
+
+
+
+    <div style="margin-top:400px"></div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> </script>
+  </body>
+</html>

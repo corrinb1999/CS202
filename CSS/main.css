@@ -1,0 +1,37 @@
+/* selector & declaration */
+
+/* importing from google fonts */
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+
+/* css variables - root and var() */
+:root{
+    --main-color: pink;
+    --text-color: green; 
+}
+
+/* selector {  propername:value;  } */
+p{
+    color:var(--text-color) !important;
+}
+
+
+/*  !important overrides other css specification on a part */
+
+body{
+   
+    /* font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif; */
+
+    /* shorthand (all the previous comment in one (in order))*/
+    font: italic small-caps bold 13px/150% Nunito;
+    
+    background-color: var(--main-color) !important;
+}
+
+h4{
+    font-family: Georgia !important;
+}
