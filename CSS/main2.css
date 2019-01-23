@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    background-color: #05a081;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+}
+
+nav a:hover{
+    color: #ffffff;
+    background: #007d65;
+    text-decoration: none;
+} */
+
+
+/* flex is life */
+nav{
+    background-color: #05a081;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    flex:  1 1 0;
+    text-align: center;
+    position: relative;
+}
+
+nav a{
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+}
+
+nav a:hover{
+    color: #ffffff;
+    background-color: #00707d65;
+    text-decoration: none;
+}
+
+/* Drop down nav */
+nav ul li ul{
+    position: absolute;
+    background-color: #05a081;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    display: none;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
