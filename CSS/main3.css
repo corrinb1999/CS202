@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cards img{
+    /* vw is viewport width, so whatever size the screen is. */
+    max-width: 20vw;
+    margin: 10px;
+    /* horz - vert - blur radius - color */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.34), 0 2px 4px rgba(0,0,0,0.2);
+}

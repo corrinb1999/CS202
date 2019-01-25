@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.card{
+    flex: 0 0 250px;
+    /* flex order: grow shrink basis(width) */
+    margin: 10px;
+}
+
+.card img{
+    max-width: 100%;
+
+}
+
+.card .text{
+    text-align: center;
+    padding: 0 20px 20px;
+}
+
+.button{
+    width: 100%;
+    display: block;
+    background-color: #05a081;
+    padding: 10px;
+    color: white;
+}
