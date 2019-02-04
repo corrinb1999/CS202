@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-1: #22bbdd;
+    --color-2: #2C6e7b;
+}
+
+.box{
+    padding: 0.8em;
+    font-size: 26px;
+    color: #ffffff;
+}
+.color-1{
+    background-color: var(--color-1);
+}
+
+.color-2{
+    background-color: var(--color-2);
+}
+
+.grid{
+    /* each px number you add in template will add a new column/row */
+    display: grid;
+    /* grid-template-columns: 30% 20% 50%;
+    grid-template-rows: 300px; */
+
+
+    /* fr - fraction unit  how much of the page columns/rows get*/
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-rows: 200px 80px; */
+
+    /* gap - space between */
+    /* grid-column-gap: 20px;
+    grid-row-gap: 20px; */
+
+    /* grid-gap: 20px; */
+
+    /* repeat - repeating fractions */
+    /* grid-template-columns: repeat(4, 1fr); */
+
+
+
+
+/* New stuff html */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 50px 100px 75px;
+
+    /* this shit cool, it follows based on the columns and rows just set, and uses grid-area names for the sections below this */
+    grid-template-areas: 
+    "head head head"
+    "nav main section"
+    "nav main section"
+    "footer footer footer";
+}
+
+.header{
+    /* name of area */
+    grid-area: head;
+}
+.nav{
+    grid-area: nav;
+}
+.section{
+    grid-area: section;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
