@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+.grid{
+    background-color: #eeeeee;
+    display: grid;
+
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 36em auto;
+
+    grid-template-areas: 
+    "banner banner banner"
+    "nav body sec"
+    "nav body sec"
+    "footer footer footer";
+}
+
+
+nav{
+    grid-area: nav;
+    background: lightblue;
+}
+
+nav li{
+    padding: 2em 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.banner{
+    background-image: url(../images/banner.jpg);
+    grid-area: banner;
+}
+
+
+.body{
+    padding: 2em;
+    grid-area: body;
+    text-align: center;
+}
+
+section{
+    padding: 1em;
+    grid-area: sec;
+    background: #6db8fd;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    background: #9cecdf;
+    text-align: center;
+    padding: 2em 5em;
+}
